@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Conversor de Monedas</title>
+</head>
+<body>
+    <br>
+    <hr>
+    <h1>Conversor de mondeas Nacional</h1>
+    <hr>
+    <div class="container">
+        <div class="card">
+            <h2>Pesos CLP</h2>
+            <input id="input" type="number">
+            <h3>Monedas a convertir</h3>
+            <select id="selec">
+                <option value="dolar">Dólar</option>
+                <option value="euro">Euro</option>
+                <option value="uf">Unidad de Fomento (UF)</option>
+                <option value="utm">Unidad Tributaria Mensual (UTM)</option>
+            </select>
+            <button id="btn" onclick="calcular() ">Calcular</button>
+            <p>Total: $ <span id="total">0</span></p>
+        </div>
+    </div>
+    <div>
+        <p id="nombreDivisa">Dolar</p>
+    </div>
+    <canvas id="estadisticas" ></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
